@@ -69,7 +69,8 @@ body {
 .nav-subcontainer nav{
     flex-wrap: nowrap;
     justify-content: space-between;
-    width: 100vw;
+    width: calc(100vw - 170px);
+    padding: 0 80px 0 90px;
 }
 .nav-menu, 
 .list-footer,
@@ -218,9 +219,6 @@ ul {
 .prev-page{
     transform: rotate(180deg);
 }
-/* .accordion{
-    width: 85%;
-} */
 .accordion-btn{
     border: solid 1px #e9edf1;
     background-color: #ffffff;
@@ -395,6 +393,9 @@ ul {
 }
 .sz-50{
     width:50%;
+}
+.sz-35 {
+    width: 35%;
 }
 
 /* Card */
