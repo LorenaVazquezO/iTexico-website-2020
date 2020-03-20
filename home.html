@@ -49,7 +49,7 @@
     <section class="section-container-white">
         <h2 class="section-title">What are you looking for?</h2>
         <div class="flex-row flex-center">
-            <div class="color-blue sz-35">
+            <div class="expandable-btn color-blue sz-35">
                 <div class="flex-row flex-center img-wrapper">
                     <img class="" src="assets/images/Services/card-1.png" alt="img">
                 </div>
@@ -58,7 +58,7 @@
                 <p class="text-sim text-white">Accelerate Digital Innovation with the Right Talent at the Right Time</p>
                 </div>
             </div>
-            <div class="color-lipstick sz-35">
+            <div class="expandable-btn color-lipstick">
                 <div  class="flex-row flex-center img-wrapper">
                     <img class="img-sm" src="assets/images/Services/card-1.png" alt="img">
                 </div>
@@ -67,7 +67,7 @@
                     <p class="text-sim text-white">Accelerate Digital Innovation with the Right Talent at the Right Time</p>
                 </div>
             </div>
-            <div class="color-charcoal sz-35">
+            <div class="expandable-btn color-charcoal sz-35">
                 <div class="flex-row flex-center img-wrapper">
                     <img class="img-sm" src="assets/images/Services/card-1.png" alt="img">
                 </div>
@@ -161,7 +161,7 @@
     <section class="section-container-white">
         <h2 class="section-title">Why iTexico: 6 Reasons</h2>
         <div class="flex-row">
-            <div class="card-slim flex-column flex-center">
+            <div class="card-slim flex-column flex-center expandable-btn">
                 <div>
                     <img src="assets/images/Services/desing.png" alt="img">
                 </div>
@@ -182,7 +182,7 @@
                     </svg>
                 </a>
             </div>
-            <div class="card-slim flex-column flex-center">
+            <div class="card-slim flex-column flex-center expandable-btn">
                 <div>
                     <img src="assets/images/Services/engineering.png" alt="img">
                 </div>
@@ -203,7 +203,7 @@
                     </svg>
                 </a>
             </div>
-            <div class="card-slim flex-column flex-center">
+            <div class="card-slim flex-column flex-center expandable-btn">
                 <div>
                     <img src="assets/images/Services/qa-1.png" alt="img">
                 </div>
@@ -224,7 +224,7 @@
                     </svg>
                 </a>
             </div>
-            <div class="card-slim flex-column flex-center">
+            <div class="card-slim flex-column flex-center expandable-btn">
                 <div>
                     <img src="assets/images/Services/mobile.png" alt="img">
                 </div>
@@ -246,7 +246,7 @@
                     </svg>
                 </a>
             </div>
-            <div class="card-slim flex-column flex-center">
+            <div class="card-slim flex-column flex-center expandable-btn">
                 <div>
                     <img src="assets/images/Services/AI.png" alt="img">
                 </div>
@@ -268,7 +268,7 @@
                     </svg>
                 </a>
             </div>
-            <div class="card-slim flex-column flex-center">
+            <div class="card-slim flex-column flex-center expandable-btn">
                 <div>
                     <img src="assets/images/Services/cloud.png" alt="img">
                 </div>
@@ -316,33 +316,33 @@
         <div class="tab-arrow flex-row flex-col-center flex-center">
             <div class="flex-row flex-col-center">
                 <div>
-                    <button class="oval oval-selected" data-label="Design Sprint"></button>
+                    <button id="design-sprint-phase" class="oval oval-selected" data-label="Design Sprint"></button>
                 </div>
                 <div class="arrow"></div>
             </div>
             <div class="flex-row flex-col-center">
-                <button class="oval" data-label="Software Architecture"></button>
+                <button id="software-architecture-phase" class="oval" data-label="Software Architecture"></button>
                 <div class="arrow"></div>
             </div>
             <div class="flex-row flex-col-center">
-                <button class="oval" data-label="Design"></button>
+                <button id="design-phase" class="oval" data-label="Design"></button>
                 <div class="arrow"></div>
             </div>
             <div class="flex-row flex-col-center">
-                <button class="oval" data-label="Software Engineering"></button>
+                <button id="software-engineering-phase" class="oval" data-label="Software Engineering"></button>
                 <div class="arrow"></div>
             </div>
             <div class="flex-row flex-col-center">
-                <button class="oval" data-label="DevOps"></button>
+                <button id="devOps-phase" class="oval" data-label="DevOps"></button>
                 <div class="arrow"></div>
             </div>
             <div class="flex-row flex-col-center">
-                <button class="oval" data-label="Support"></button>
+                <button id="support-phase" class="oval" data-label="Support"></button>
             </div>
         </div>
         <div class="tab-content">
-            <h3 class="text-snd text-blue-light">Design Sprint</h3>
-            <p class="text-trd">A Design Sprint is a 4- or 5-day process for rapidly solving big challenges, creating new products, or improving existing ones. It compresses potentially months of work into a few days.</p>
+            <h3 id="phase-description-title" class="text-snd text-blue-light">Design Sprint</h3>
+            <p id="phase-description" class="text-trd">A Design Sprint is a 4- or 5-day process for rapidly solving big challenges, creating new products, or improving existing ones. It compresses potentially months of work into a few days.</p>
         </div>
     </section>
     <section class="section-container-gray flex-row flex-center">
@@ -598,5 +598,6 @@
             Privacy & Legal
         </div>
     </footer>
+    <script src="home.js"></script>
 </body>
 </html>
