@@ -46,6 +46,17 @@ body {
 .color-blue{
     background-color: #1b75bb;
 }
+
+.expandable-btn {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.expandable-btn:hover {
+    transform: scale(1.1);
+}
+
 .color-lipstick{
     background-color: #d52588;
 }
@@ -394,9 +405,6 @@ ul {
 .sz-50{
     width:50%;
 }
-.sz-35 {
-    width: 35%;
-}
 
 /* Card */
 .card{
@@ -593,4 +601,8 @@ ul {
 }
 .ft-social a{
     margin: 10px;
+}
+
+:focus {
+    outline: none;
 }
