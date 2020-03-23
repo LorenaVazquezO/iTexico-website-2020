@@ -410,6 +410,7 @@ ul {
 .card{
     margin: 10px;
     width: 31.7%;
+    min-height: 427px;
     align-self: strech;
 }
 .card-hd{
@@ -419,7 +420,6 @@ ul {
     width: 100%;
 }
 .card-tag-hd{
-    height: 22px;
     font-size: 18px;
     font-weight: 500;
     line-height: 1.22;
@@ -440,6 +440,7 @@ ul {
 
 .card-content {
     padding: 20px 15px;
+    min-height: 204px;
 }
 .card-content > * {
     margin: 0;
