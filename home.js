@@ -1,4 +1,4 @@
-const deliverPhases = {
+const deliveryPhases = {
   "design-sprint-phase": { circleColor: "red", description: "Phase description 1" },
   "software-architecture-phase": { circleColor: "blue", description: "Phase description 2" },
   "design-phase": { circleColor: "yellow", description: "Phase description 3" },
@@ -17,7 +17,7 @@ const resetElements = () => {
 const setCurrentElement = target => {
   const elementID = target.getAttribute("id");
   const defaultPhase = {circleColor: "black", description: "Default description"};
-  const phase = deliverPhases[elementID] || defaultPhase;
+  const phase = deliveryPhases[elementID] || defaultPhase;
   const phaseDescriptionTitle = document.getElementById("phase-description-title");
   const phaseDescription = document.getElementById("phase-description");
 

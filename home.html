@@ -6,6 +6,7 @@
     <title>Document</title>
     <link href="https://fonts.googleapis.com/css?family=Poppins|Work+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="carousel.css">
 </head>
 <body>
     <div class="nav-container">
@@ -49,7 +50,7 @@
     <section class="section-container-white">
         <h2 class="section-title">What are you looking for?</h2>
         <div class="flex-row flex-center">
-            <div class="expandable-btn color-blue sz-35">
+            <div class="expandable-btn color-blue">
                 <div class="flex-row flex-center img-wrapper">
                     <img class="" src="assets/images/Services/card-1.png" alt="img">
                 </div>
@@ -67,7 +68,7 @@
                     <p class="text-sim text-white">Accelerate Digital Innovation with the Right Talent at the Right Time</p>
                 </div>
             </div>
-            <div class="expandable-btn color-charcoal sz-35">
+            <div class="expandable-btn color-charcoal">
                 <div class="flex-row flex-center img-wrapper">
                     <img class="img-sm" src="assets/images/Services/card-1.png" alt="img">
                 </div>
@@ -81,80 +82,319 @@
     </section>
     <section class="section-container-gray">
         <h2 class="section-title">Recent Case Studies</h2>
-        <div class="flex-row flex-center">
-            <div class="card">
-                <div>
-                    <div class="card-hd flex-row flex-end">
-                        <div class="card-tag-hd color-lipstick">IT Services</div>
+        <div class="carousel-wrapper">
+            <div class="carousel">
+
+                <div class="carousel__slide initial flex-row flex-center">
+                    <div class="card">
+                        <div>
+                            <div class="card-hd flex-row flex-end">
+                                <div class="card-tag-hd color-lipstick">IT Services</div>
+                            </div>
+                            <img class="img-cover" src="assets/images/companies/carbonBlack.png" alt="img">
+                        </div>
+                        <div class="color-charcoal card-content">
+                            <h4 class="text-white text-snd">Management the testing scheme for enterprise security software product.</h4>
+                            <p class="text-sim text-white">Team of senior testers with experience across a variety of platforms and with test automation schemes, including E2E, API, and component level.</p>
+                        </div>
+                        <div class="color-blue card-footer flex-row flex-sp-ar">
+                            <div class="flex-row flex-col-center text-white">
+                                <img src="assets/images/Services/manual.png" alt="img">
+                                <small>Manual Testing</small>
+                            </div>
+                            <div class="flex-row flex-col-center text-white">
+                                <img class="" src="assets/images/Services/qa.png" alt="img">
+                                <small>Automation Testing</small>
+                            </div>
+                        </div>
                     </div>
-                    <img class="img-cover" src="assets/images/companies/carbonBlack.png" alt="img">
+                    <div class="card">
+                        <div>
+                            <div class="card-hd flex-row flex-end">
+                                <div class="card-tag-hd color-lipstick">Manufacturing</div>
+                            </div>
+                            <img class="img-cover" src="assets/images/companies/CHI.png" alt="img">
+                        </div>
+                        <div class="color-charcoal card-content">
+                            <h4 class="text-white text-snd">Management the testing scheme for enterprise security software product.</h4>
+                            <p class="text-sim text-white">Team of senior testers with experience across a variety of platforms and with test automation schemes, including E2E, API, and component level.</p>
+                        </div>
+                        <div class="color-blue card-footer flex-row flex-sp-ar">
+                            <div class="flex-row flex-col-center text-white">
+                                <img class="" src="assets/images/Services/front.png" alt="img">
+                                <small>UX/UI</small>
+                            </div>
+                            <div class="flex-row flex-col-center text-white">
+                                <img class="" src="assets/images/Services/front.png" alt="img">
+                                <small>Front End</small>
+                            </div>
+                            <div class="flex-row flex-col-center text-white">
+                                <img class="" src="assets/images/Services/front.png" alt="img">
+                                <small>Back End</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div>
+                            <div class="card-hd flex-row flex-end">
+                                <div class="card-tag-hd color-lipstick">Retail</div>
+                            </div>
+                            <img class="img-cover" src="assets/images/companies/monin.png" alt="img">
+                        </div>
+                        <div class="color-charcoal card-content">
+                            <h4 class="text-white text-snd">Management the testing scheme for enterprise security software product.</h4>
+                            <p class="text-sim text-white">Team of experts in UX/UI, iOS, Android and .NET to build mobile platform with innovative interfaces for the global market.</p>
+                        </div>
+                        <div class="color-blue card-footer flex-row flex-sp-ar">
+                            <div class="flex-row flex-col-center text-white">
+                                <img class="" src="assets/images/Services/front.png" alt="img">
+                                <small>UX/UI</small>
+                            </div>
+                            <div class="flex-row flex-col-center text-white">
+                                <img class="" src="assets/images/Services/front.png" alt="img">
+                                <small>Front End</small>
+                            </div>
+                            <div class="flex-row flex-col-center text-white">
+                                <img class="" src="assets/images/Services/front.png" alt="img">
+                                <small>Back End</small>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="color-charcoal card-content">
-                    <h4 class="text-white text-snd">Management the testing scheme for enterprise security software product.</h4>
-                    <p class="text-sim text-white">Team of senior testers with experience across a variety of platforms and with test automation schemes, including E2E, API, and component level.</p>
+
+                <div class="carousel__slide flex-row flex-center">
+                    <div class="card">
+                        <div>
+                            <div class="card-hd flex-row flex-end">
+                                <div class="card-tag-hd color-lipstick">IT Services 2</div>
+                            </div>
+                            <img class="img-cover" src="assets/images/companies/carbonBlack.png" alt="img">
+                        </div>
+                        <div class="color-charcoal card-content">
+                            <h4 class="text-white text-snd">Management the testing scheme for enterprise security software product.</h4>
+                            <p class="text-sim text-white">Team of senior testers with experience across a variety of platforms and with test automation schemes, including E2E, API, and component level.</p>
+                        </div>
+                        <div class="color-blue card-footer flex-row flex-sp-ar">
+                            <div class="flex-row flex-col-center text-white">
+                                <img src="assets/images/Services/manual.png" alt="img">
+                                <small>Manual Testing</small>
+                            </div>
+                            <div class="flex-row flex-col-center text-white">
+                                <img class="" src="assets/images/Services/qa.png" alt="img">
+                                <small>Automation Testing</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div>
+                            <div class="card-hd flex-row flex-end">
+                                <div class="card-tag-hd color-lipstick">Manufacturing 2</div>
+                            </div>
+                            <img class="img-cover" src="assets/images/companies/CHI.png" alt="img">
+                        </div>
+                        <div class="color-charcoal card-content">
+                            <h4 class="text-white text-snd">Management the testing scheme for enterprise security software product.</h4>
+                            <p class="text-sim text-white">Team of senior testers with experience across a variety of platforms and with test automation schemes, including E2E, API, and component level.</p>
+                        </div>
+                        <div class="color-blue card-footer flex-row flex-sp-ar">
+                            <div class="flex-row flex-col-center text-white">
+                                <img class="" src="assets/images/Services/front.png" alt="img">
+                                <small>UX/UI</small>
+                            </div>
+                            <div class="flex-row flex-col-center text-white">
+                                <img class="" src="assets/images/Services/front.png" alt="img">
+                                <small>Front End</small>
+                            </div>
+                            <div class="flex-row flex-col-center text-white">
+                                <img class="" src="assets/images/Services/front.png" alt="img">
+                                <small>Back End</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div>
+                            <div class="card-hd flex-row flex-end">
+                                <div class="card-tag-hd color-lipstick">Retail 2</div>
+                            </div>
+                            <img class="img-cover" src="assets/images/companies/monin.png" alt="img">
+                        </div>
+                        <div class="color-charcoal card-content">
+                            <h4 class="text-white text-snd">Management the testing scheme for enterprise security software product.</h4>
+                            <p class="text-sim text-white">Team of experts in UX/UI, iOS, Android and .NET to build mobile platform with innovative interfaces for the global market.</p>
+                        </div>
+                        <div class="color-blue card-footer flex-row flex-sp-ar">
+                            <div class="flex-row flex-col-center text-white">
+                                <img class="" src="assets/images/Services/front.png" alt="img">
+                                <small>UX/UI</small>
+                            </div>
+                            <div class="flex-row flex-col-center text-white">
+                                <img class="" src="assets/images/Services/front.png" alt="img">
+                                <small>Front End</small>
+                            </div>
+                            <div class="flex-row flex-col-center text-white">
+                                <img class="" src="assets/images/Services/front.png" alt="img">
+                                <small>Back End</small>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="color-blue card-footer flex-row flex-sp-ar">
-                    <div class="flex-row flex-col-center text-white">
-                        <img src="assets/images/Services/manual.png" alt="img">
-                        <small>Manual Testing</small>
+
+                <div class="carousel__slide flex-row flex-center">
+                    <div class="card">
+                        <div>
+                            <div class="card-hd flex-row flex-end">
+                                <div class="card-tag-hd color-lipstick">IT Services 3</div>
+                            </div>
+                            <img class="img-cover" src="assets/images/companies/carbonBlack.png" alt="img">
+                        </div>
+                        <div class="color-charcoal card-content">
+                            <h4 class="text-white text-snd">Management the testing scheme for enterprise security software product.</h4>
+                            <p class="text-sim text-white">Team of senior testers with experience across a variety of platforms and with test automation schemes, including E2E, API, and component level.</p>
+                        </div>
+                        <div class="color-blue card-footer flex-row flex-sp-ar">
+                            <div class="flex-row flex-col-center text-white">
+                                <img src="assets/images/Services/manual.png" alt="img">
+                                <small>Manual Testing</small>
+                            </div>
+                            <div class="flex-row flex-col-center text-white">
+                                <img class="" src="assets/images/Services/qa.png" alt="img">
+                                <small>Automation Testing</small>
+                            </div>
+                        </div>
                     </div>
-                    <div class="flex-row flex-col-center text-white">
-                        <img class="" src="assets/images/Services/qa.png" alt="img">
-                        <small>Automation Testing</small>
+                    <div class="card">
+                        <div>
+                            <div class="card-hd flex-row flex-end">
+                                <div class="card-tag-hd color-lipstick">Manufacturing 3</div>
+                            </div>
+                            <img class="img-cover" src="assets/images/companies/CHI.png" alt="img">
+                        </div>
+                        <div class="color-charcoal card-content">
+                            <h4 class="text-white text-snd">Management the testing scheme for enterprise security software product.</h4>
+                            <p class="text-sim text-white">Team of senior testers with experience across a variety of platforms and with test automation schemes, including E2E, API, and component level.</p>
+                        </div>
+                        <div class="color-blue card-footer flex-row flex-sp-ar">
+                            <div class="flex-row flex-col-center text-white">
+                                <img class="" src="assets/images/Services/front.png" alt="img">
+                                <small>UX/UI</small>
+                            </div>
+                            <div class="flex-row flex-col-center text-white">
+                                <img class="" src="assets/images/Services/front.png" alt="img">
+                                <small>Front End</small>
+                            </div>
+                            <div class="flex-row flex-col-center text-white">
+                                <img class="" src="assets/images/Services/front.png" alt="img">
+                                <small>Back End</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div>
+                            <div class="card-hd flex-row flex-end">
+                                <div class="card-tag-hd color-lipstick">Retail 3</div>
+                            </div>
+                            <img class="img-cover" src="assets/images/companies/monin.png" alt="img">
+                        </div>
+                        <div class="color-charcoal card-content">
+                            <h4 class="text-white text-snd">Management the testing scheme for enterprise security software product.</h4>
+                            <p class="text-sim text-white">Team of experts in UX/UI, iOS, Android and .NET to build mobile platform with innovative interfaces for the global market.</p>
+                        </div>
+                        <div class="color-blue card-footer flex-row flex-sp-ar">
+                            <div class="flex-row flex-col-center text-white">
+                                <img class="" src="assets/images/Services/front.png" alt="img">
+                                <small>UX/UI</small>
+                            </div>
+                            <div class="flex-row flex-col-center text-white">
+                                <img class="" src="assets/images/Services/front.png" alt="img">
+                                <small>Front End</small>
+                            </div>
+                            <div class="flex-row flex-col-center text-white">
+                                <img class="" src="assets/images/Services/front.png" alt="img">
+                                <small>Back End</small>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="card">
-                <div>
-                    <div class="card-hd flex-row flex-end">
-                        <div class="card-tag-hd color-lipstick">Manufacturing</div>
+
+                <div class="carousel__slide flex-row flex-center">
+                    <div class="card">
+                        <div>
+                            <div class="card-hd flex-row flex-end">
+                                <div class="card-tag-hd color-lipstick">IT Services 4</div>
+                            </div>
+                            <img class="img-cover" src="assets/images/companies/carbonBlack.png" alt="img">
+                        </div>
+                        <div class="color-charcoal card-content">
+                            <h4 class="text-white text-snd">Management the testing scheme for enterprise security software product.</h4>
+                            <p class="text-sim text-white">Team of senior testers with experience across a variety of platforms and with test automation schemes, including E2E, API, and component level.</p>
+                        </div>
+                        <div class="color-blue card-footer flex-row flex-sp-ar">
+                            <div class="flex-row flex-col-center text-white">
+                                <img src="assets/images/Services/manual.png" alt="img">
+                                <small>Manual Testing</small>
+                            </div>
+                            <div class="flex-row flex-col-center text-white">
+                                <img class="" src="assets/images/Services/qa.png" alt="img">
+                                <small>Automation Testing</small>
+                            </div>
+                        </div>
                     </div>
-                    <img class="img-cover" src="assets/images/companies/CHI.png" alt="img">
+                    <div class="card">
+                        <div>
+                            <div class="card-hd flex-row flex-end">
+                                <div class="card-tag-hd color-lipstick">Manufacturing 4</div>
+                            </div>
+                            <img class="img-cover" src="assets/images/companies/CHI.png" alt="img">
+                        </div>
+                        <div class="color-charcoal card-content">
+                            <h4 class="text-white text-snd">Management the testing scheme for enterprise security software product.</h4>
+                            <p class="text-sim text-white">Team of senior testers with experience across a variety of platforms and with test automation schemes, including E2E, API, and component level.</p>
+                        </div>
+                        <div class="color-blue card-footer flex-row flex-sp-ar">
+                            <div class="flex-row flex-col-center text-white">
+                                <img class="" src="assets/images/Services/front.png" alt="img">
+                                <small>UX/UI</small>
+                            </div>
+                            <div class="flex-row flex-col-center text-white">
+                                <img class="" src="assets/images/Services/front.png" alt="img">
+                                <small>Front End</small>
+                            </div>
+                            <div class="flex-row flex-col-center text-white">
+                                <img class="" src="assets/images/Services/front.png" alt="img">
+                                <small>Back End</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div>
+                            <div class="card-hd flex-row flex-end">
+                                <div class="card-tag-hd color-lipstick">Retail 4</div>
+                            </div>
+                            <img class="img-cover" src="assets/images/companies/monin.png" alt="img">
+                        </div>
+                        <div class="color-charcoal card-content">
+                            <h4 class="text-white text-snd">Management the testing scheme for enterprise security software product.</h4>
+                            <p class="text-sim text-white">Team of experts in UX/UI, iOS, Android and .NET to build mobile platform with innovative interfaces for the global market.</p>
+                        </div>
+                        <div class="color-blue card-footer flex-row flex-sp-ar">
+                            <div class="flex-row flex-col-center text-white">
+                                <img class="" src="assets/images/Services/front.png" alt="img">
+                                <small>UX/UI</small>
+                            </div>
+                            <div class="flex-row flex-col-center text-white">
+                                <img class="" src="assets/images/Services/front.png" alt="img">
+                                <small>Front End</small>
+                            </div>
+                            <div class="flex-row flex-col-center text-white">
+                                <img class="" src="assets/images/Services/front.png" alt="img">
+                                <small>Back End</small>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="color-charcoal card-content">
-                    <h4 class="text-white text-snd">Management the testing scheme for enterprise security software product.</h4>
-                    <p class="text-sim text-white">Team of senior testers with experience across a variety of platforms and with test automation schemes, including E2E, API, and component level.</p>
-                </div>
-                <div class="color-blue card-footer flex-row flex-sp-ar">
-                    <div class="flex-row flex-col-center text-white">
-                        <img class="" src="assets/images/Services/front.png" alt="img">
-                        <small>UX/UI</small>
-                    </div>
-                    <div class="flex-row flex-col-center text-white">
-                        <img class="" src="assets/images/Services/front.png" alt="img">
-                        <small>Front End</small>
-                    </div>
-                    <div class="flex-row flex-col-center text-white">
-                        <img class="" src="assets/images/Services/front.png" alt="img">
-                        <small>Back End</small>
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <div>
-                    <div class="card-hd flex-row flex-end">
-                        <div class="card-tag-hd color-lipstick">Retail</div>
-                    </div>
-                    <img class="img-cover" src="assets/images/companies/monin.png" alt="img">
-                </div>
-                <div class="color-charcoal card-content">
-                    <h4 class="text-white text-snd">Management the testing scheme for enterprise security software product.</h4>
-                    <p class="text-sim text-white">Team of experts in UX/UI, iOS, Android and .NET to build mobile platform with innovative interfaces for the global market.</p>
-                </div>
-                <div class="color-blue card-footer flex-row flex-sp-ar">
-                    <div class="flex-row flex-col-center text-white">
-                        <img class="" src="assets/images/Services/front.png" alt="img">
-                        <small>UX/UI</small>
-                    </div>
-                    <div class="flex-row flex-col-center text-white">
-                        <img class="" src="assets/images/Services/front.png" alt="img">
-                        <small>Front End</small>
-                    </div>
-                    <div class="flex-row flex-col-center text-white">
-                        <img class="" src="assets/images/Services/front.png" alt="img">
-                        <small>Back End</small>
-                    </div>
-                </div>
+                
+                <div class="carousel__button--next"></div>
+                <div class="carousel__button--prev"></div>
             </div>
         </div>
     </section>
@@ -599,5 +839,6 @@
         </div>
     </footer>
     <script src="home.js"></script>
+    <script src="carousel.js"></script>
 </body>
 </html>
