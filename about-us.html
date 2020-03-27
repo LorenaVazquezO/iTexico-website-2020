@@ -8,6 +8,30 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+     <!--Mobile nav-->
+     <div class="mobile-or-tablet">
+        <div class="menu_btn">
+            <div style="margin-left: auto; padding: 20px 20px 20px 20px;" onclick="displayMenu()"> <img style="height: 50px; width: 50px;" src="assets/images/open-menu.svg">
+            </div>   
+        </div>
+        <div id="overlay" style="display:none;">
+            <div style="display:flex; flex-direction: row; height: 75px;">
+                <div><img class="logo" src="assets/images/logo/iTexico_TagLogo_whiteWeb.png" alt="logo">
+                </div>
+                <div class="nav-icon" id="close_menu" onclick="displayMenu()"> <img class="close-ic" src="assets/images/close.svg">
+                </div>
+            </div>
+            <ul class="nav-menu" style="text-align: center; padding-inline-start: 0px">
+                <li class="nav-link"><a href="#"> Our Services</a></li>
+                <li class="nav-link"><a href="#"> How We Work</a></li>
+                <li class="nav-link"><a href="#">Case Studies</a></li>
+                <li class="nav-link"><a href="#"> About Us</a></li>
+                <li class="nav-link"><a href="#"> Blog</a></li>
+                <li class="nav-link"><a href="#"> Contact</a></li>
+            </ul>
+        </div>
+     </div>
+    <!--end of mobile nav-->
     <div class="nav-subcontainer">
         <nav class="flex-row">
             <a>
@@ -33,7 +57,7 @@
                 iTexico is helping start-up, growth, mid-market and enterprise companies innovate their business with solutions for Mobile Web, Cloud and AI.
             </p>    
     </section> 
-    <section class="section-container-gray">
+    <section class="section-container-gray" id="a-us">
         <div class="flex-row flex-sp-ar">
             <div class="text-charcoal text-snd text-left sz-50">
                 <p>
@@ -44,8 +68,8 @@
                     Since its’ founding, iTexico has experienced 500% growth while maintaining strong investments in today’s technology platforms and delivery capacity.
                 </p>
             </div>
-            <div class="sz-50 flex-row flex-end">
-                <video width="575" height="326px" controls>
+            <div class="sz-50 flex-row flex-end" id="sec-us-v">
+                <video width="575" height="326px" controls id="vid-a">
                     <source src="" type="video/mp4">
                     Your browser does not support the video tag.
                   </video>
@@ -55,8 +79,8 @@
     <section class="section-container-white">
         <h2 class="section-title">Facts and Numbers</h2>
         <div class="flex-row flex-center flex-sp-bt">
-            <div class="flex-column" style="width: 17%;">
-                <div class=" card color-blue" style="width: 95%;">
+            <div class="flex-column" id="fc-l">
+                <div class=" card color-blue fc-r" >
                     <div class="card-content pad-20">
                         <p class="text-white-pop text-main flex-column flex-center flex-col-center">
                             +300
@@ -66,7 +90,7 @@
                         </p>
                     </div>
                 </div>
-                <div class=" card color-charcoal" style="width: 95%;">
+                <div class=" card color-charcoal fc-r">
                     <div class="card-content pad-20">
                         <p class="text-white-pop text-main flex-column flex-center flex-col-center">
                             +300
@@ -77,7 +101,7 @@
                     </div>
                 </div>
             </div>
-            <div class=" card color-lipstick" style="width: 17%;">
+            <div class=" card color-lipstick fc-d" >
                 <div class="card-content pad-20">
                     <div class="card" style="width: 98%;">
                         <p class="text-white-pop text-main flex-column flex-center flex-col-center s-margin">
@@ -105,9 +129,9 @@
                     </div>
                 </div>
             </div>
-            <div class="flex-column flex-sp-bt" style="width: 65%;">
+            <div class="flex-column flex-sp-bt" id="fc-t">
                 <div class="flex-row flex-sp-bt">
-                    <div class=" card color-charcoal" style="width: 50%; height: 100%;">
+                    <div class=" card color-charcoal fc-y">
                         <div class="card-content pad-20">
                             <p class="text-white-pop text-main flex-column flex-center flex-col-center">
                                 +15
@@ -117,7 +141,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class=" card color-lipstick" style="width: 50%; height: 100%;">
+                    <div class=" card color-lipstick fc-y">
                         <div class="card-content pad-20">
                             <p class="text-white-pop text-main flex-column flex-center flex-col-center">
                                 +80
@@ -129,7 +153,7 @@
                     </div>
                 </div>
                 <div class="flex-row flex-sp-bt">
-                    <div class=" card color-blue" style="width: 30%;">
+                    <div class=" card color-blue" id="fc-e">
                         <div class="card-content pad-20">
                             <p class="text-white-pop text-main flex-column flex-center flex-col-center">
                                 6
@@ -139,7 +163,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class=" card color-light-blue" style="width: 35%;">
+                    <div class=" card color-light-blue fc-v">
                         <div class="card-content pad-20">
                             <p class="text-white-pop text-main flex-column flex-center flex-col-center">
                                 +80
@@ -149,7 +173,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="card color-charcoal" style="width: 35%;">
+                    <div class="card color-charcoal fc-v">
                         <div class="card-content pad-20">
                             <p class="text-white-pop text-main flex-column flex-center flex-col-center">
                                 +80
@@ -165,8 +189,8 @@
     </section>
     <section class="section-container-white">
         <h2 class="section-title">Why iTexico: 6 Reasons</h2>
-        <div class="flex-row">
-            <div class="card-slim flex-column flex-center">
+        <div class="flex-row" id="wh-flex">
+            <div class="card-slim flex-column flex-center expandable-btn">
                 <div>
                     <img src="assets/images/Services/desing.png" alt="img">
                 </div>
@@ -187,7 +211,7 @@
                     </svg>
                 </a>
             </div>
-            <div class="card-slim flex-column flex-center">
+            <div class="card-slim flex-column flex-center expandable-btn">
                 <div>
                     <img src="assets/images/Services/engineering.png" alt="img">
                 </div>
@@ -208,7 +232,7 @@
                     </svg>
                 </a>
             </div>
-            <div class="card-slim flex-column flex-center">
+            <div class="card-slim flex-column flex-center expandable-btn">
                 <div>
                     <img src="assets/images/Services/qa-1.png" alt="img">
                 </div>
@@ -229,7 +253,7 @@
                     </svg>
                 </a>
             </div>
-            <div class="card-slim flex-column flex-center">
+            <div class="card-slim flex-column flex-center expandable-btn">
                 <div>
                     <img src="assets/images/Services/mobile.png" alt="img">
                 </div>
@@ -251,7 +275,7 @@
                     </svg>
                 </a>
             </div>
-            <div class="card-slim flex-column flex-center">
+            <div class="card-slim flex-column flex-center expandable-btn">
                 <div>
                     <img src="assets/images/Services/AI.png" alt="img">
                 </div>
@@ -273,7 +297,7 @@
                     </svg>
                 </a>
             </div>
-            <div class="card-slim flex-column flex-center">
+            <div class="card-slim flex-column flex-center expandable-btn">
                 <div>
                     <img src="assets/images/Services/cloud.png" alt="img">
                 </div>
@@ -301,7 +325,7 @@
     <section class="section-container-white">
         <h2 class="section-title">Opinion of our Clients</h2>
         <div>
-            <div class="flex-row flex-center">
+            <div class="flex-row flex-center " id="cont-w">
                 <img src="assets/images/companies/carbon-sm.png" alt="img" class="img-margin">
                 <img src="assets/images/companies/chi-sm.png" alt="img" class="img-margin">
                 <img src="assets/images/companies/HomeAway.png" alt="img" class="img-margin">
@@ -312,7 +336,7 @@
             <div class="flex-row flex-center flex-col-center">
                 <!-- Replace with widget code -->
                 <div>
-                    <img src="assets/images/companies/clutch-widget.png" alt="img" class="img-margin">
+                    <img src="assets/images/companies/clutch-widget.png" alt="img" class="img-margin" id="rep-img">
                 </div>
             </div>
         </div>
@@ -327,11 +351,11 @@
             <img src="assets/images/photos/technologies/tech-1.png" alt="img">
             <img src="assets/images/photos/technologies/group-2.png" alt="img">
             <img src="assets/images/photos/technologies/group-3.png" alt="img">
-            <img src="assets/images/photos/technologies/group-4.png" alt="img">
-            <img src="assets/images/photos/technologies/tech-1.png" alt="img">
-            <img src="assets/images/photos/technologies/group-2.png" alt="img">
-            <img src="assets/images/photos/technologies/group-3.png" alt="img">
-            <img src="assets/images/photos/technologies/group-4.png" alt="img">
+            <img src="assets/images/photos/technologies/group-4.png" alt="img" class="img-e">
+            <img src="assets/images/photos/technologies/tech-1.png" alt="img" class="img-d">
+            <img src="assets/images/photos/technologies/group-2.png" alt="img" class="img-d">
+            <img src="assets/images/photos/technologies/group-3.png" alt="img" class="img-d">
+            <img src="assets/images/photos/technologies/group-4.png" alt="img" class="img-d">
         </div>
         <div>
             <button class="custom-btn">
@@ -345,7 +369,7 @@
         <p class="text-charcoal text-snd">
             Our multi-story building will have nearly 200 iTexicans sharing knowledge, collaborating and building great software. iTexico benefits from Aguascalientes’ growing technology ecosystem and gains access to world-class software development talent. Increasing our capacity in Mexico allows us to meet the demands of our growing customer base in the Nearshore Market.
         </p>
-        <div class="flex-row">
+        <div class="flex-row flex-snd">
             <div class="card flex-column flex-col-center">
                 <div>
                     <img src="assets/images/people/anurag.png"/>
@@ -387,22 +411,11 @@
                     <p class="text-snd-sub flex-column">
                         Carolina Gonzalez
                         <span class="text-trd">Talent Management Manager</span>
-                    </p>
-                </div>
-            </div>
-            <div class="card flex-column flex-col-center">
-                <div>
-                    <img src="assets/images/people/shalini.png"/>
-                </div>
-                <div class="text-charcoal">
-                    <p class="text-snd-sub flex-column">
-                        Shalini Arora
-                        <span class="text-trd">General Inquiries</span>
                     </p>
                 </div>
             </div>
         </div>
-        <div class="flex-row">
+        <div class="flex-row flex-snd">
             <div class="card flex-column flex-col-center">
                 <div>
                     <img src="assets/images/people/anurag.png"/>
@@ -444,22 +457,11 @@
                     <p class="text-snd-sub flex-column">
                         Carolina Gonzalez
                         <span class="text-trd">Talent Management Manager</span>
-                    </p>
-                </div>
-            </div>
-            <div class="card flex-column flex-col-center">
-                <div>
-                    <img src="assets/images/people/shalini.png"/>
-                </div>
-                <div class="text-charcoal">
-                    <p class="text-snd-sub flex-column">
-                        Shalini Arora
-                        <span class="text-trd">General Inquiries</span>
                     </p>
                 </div>
             </div>
         </div>
-        <div class="flex-row">
+        <div class="flex-row flex-snd">
             <div class="card flex-column flex-col-center">
                 <div>
                     <img src="assets/images/people/anurag.png"/>
@@ -501,22 +503,11 @@
                     <p class="text-snd-sub flex-column">
                         Carolina Gonzalez
                         <span class="text-trd">Talent Management Manager</span>
-                    </p>
-                </div>
-            </div>
-            <div class="card flex-column flex-col-center">
-                <div>
-                    <img src="assets/images/people/shalini.png"/>
-                </div>
-                <div class="text-charcoal">
-                    <p class="text-snd-sub flex-column">
-                        Shalini Arora
-                        <span class="text-trd">General Inquiries</span>
                     </p>
                 </div>
             </div>
         </div>
-        <div class="flex-row">
+        <div class="flex-row flex-snd">
             <div class="card flex-column flex-col-center">
                 <div>
                     <img src="assets/images/people/anurag.png"/>
@@ -558,17 +549,6 @@
                     <p class="text-snd-sub flex-column">
                         Carolina Gonzalez
                         <span class="text-trd">Talent Management Manager</span>
-                    </p>
-                </div>
-            </div>
-            <div class="card flex-column flex-col-center">
-                <div>
-                    <img src="assets/images/people/shalini.png"/>
-                </div>
-                <div class="text-charcoal">
-                    <p class="text-snd-sub flex-column">
-                        Shalini Arora
-                        <span class="text-trd">General Inquiries</span>
                     </p>
                 </div>
             </div>
@@ -589,7 +569,7 @@
 
     <section class="section-container-gray">
         <h2 class="section-title">recent resouces</h2>
-        <div class="flex-row flex-wrap">
+        <div class="flex-row flex-center">
             <div class="card">
                 <div>
                     <img class="img-cover" src="assets/images/photos/pic-1.png" alt="img">
@@ -657,8 +637,8 @@
             </div>
         </div>
         <div class="section-container-charcoal">
-            <div class="flex-row">
-                <div>
+            <div class="flex-row" id="ft-n">
+                <div class="footer-center">
                     <div>
                         <a>
                             <img class="img-sm" src="assets/images/logo/iTexico_Logo_WH_Web.png" alt="logo">
@@ -755,7 +735,7 @@
                         <a>Opinions</a>
                     </li>
                 </ul>
-                <ul class="list-footer">
+                <ul class="list-footer" id="ft-con">
                     <li>contact</li>
                     <li>
                         <address>
@@ -778,5 +758,19 @@
             Privacy & Legal
         </div>
     </footer>
+        <script>
+        function displayMenu(){
+            var display;
+            var overlay = document.getElementById("overlay");
+            display = overlay.style.display;
+
+            if (display == "none"){
+                overlay.style.display = "block"
+            }
+            else{
+                overlay.style.display = "none"
+            }
+        }
+    </script>
 </body>
 </html>
