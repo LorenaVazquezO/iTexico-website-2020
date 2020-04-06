@@ -8,6 +8,27 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+        <!--Mobile nav-->
+     <div class="mobile-or-tablet">
+        <div class="menu_btn">
+            <div style="margin: 15px 29px 29px 29px; margin-left: auto;" onclick="displayMenu()"> <img style="height: 50px; width: 50px;" src="assets/images/open-menu.svg"></div>   
+        </div>
+        <div id="overlay" style="display:none;">
+            <div style="display:flex; flex-direction: row; height: 75px;">
+                <div><img class="logo" src="assets/images/logo/iTexico_TagLogo_whiteWeb.png" alt="logo"></div>
+                <div class="nav-icon" id="close_menu" onclick="displayMenu()"> <img class="close-ic" src="assets/images/close.svg"> </div>
+            </div>
+            <ul class="nav-menu" style="text-align: center; padding-inline-start: 0px">
+                <li class="nav-link"><a href="#"> Our Services</a></li>
+                <li class="nav-link"><a href="#"> How We Work</a></li>
+                <li class="nav-link"><a href="#">Case Studies</a></li>
+                <li class="nav-link"><a href="#"> About Us</a></li>
+                <li class="nav-link"><a href="#"> Blog</a></li>
+                <li class="nav-link"><a href="#"> Contact</a></li>
+            </ul>
+        </div>
+     </div>
+    <!--end of mobile nav-->
     <div class="nav-subcontainer">
         <nav class="flex-row">
             <a>
@@ -25,7 +46,7 @@
             </div>
         </nav> 
     </div>
-    <section class="section-container-white section-hd-title flex-column flex-center">
+    <section class="section-container-white section-hd-title flex-column flex-center" id="sec-ui">
             <h1 class="text-charcoal-pop text-main s-margin">
                 UX/UI Design
             </h1>
@@ -34,8 +55,8 @@
             </p>    
     </section>
     <section class="section-container-white">
-        <div class="flex-row">
-            <div class="flex-column flex-sp-bt text-charcoal text-snd text-left" style="width: 60%;">
+        <div class="flex-row" id="cont-a">
+            <div class="flex-column flex-sp-bt text-charcoal text-snd text-left" id="ss-txt">
                 <div>
                     <p>
                         We Help Our Customers To Conceptualize, Design, Build, Ship And Maintain Great Software That Responds To The Changing Needs Of The Market And The Business Product.
@@ -43,7 +64,7 @@
                     <p>
                         We Help Our Customers To Conceptualize, Design, Build, Ship And Maintain Great Software That Responds To The Changing Needs Of The Market And The Business Product.
                     </p>
-                    <ul>
+                    <ul id="lst">
                         <li>Prototype Center</li>
                         <li>Product Design Sprints</li>
                         <li>Product Design + Development Solutions</li>
@@ -54,8 +75,8 @@
                     <button class="custom-btn">Contact Us</button>
                 </div> 
             </div>
-            <div class="flex-column flex-col-center flex-center m-lf" style="width: 40%;">
-                <img src="assets/images/photos/services.png" alt="logo" style="height: 320px;">
+            <div class="flex-column flex-col-center flex-center m-lf" id="img-b">
+                <img src="assets/images/photos/services.png" alt="logo">
             </div>
         </div>
     </section>
@@ -108,7 +129,7 @@
     </section>
     <section class="section-container-white">
         <h2 class="section-title">Our specialty in UI/UX Design</h2>
-        <div class="flex-row m-up-down">
+        <div class="flex-row m-up-down" id="wh-flex">
             <div class="flex-column flex-center sz-50 pad-20">
                 <div class="text-snd text-left">
                     <h3 class="text-blue">Business Engagement</h3>
@@ -118,10 +139,10 @@
                 </div>
             </div>
             <div class="sz-50 flex-column flex-col-center flex-center pad-20">
-                <img class="img-cover" src="assets/images/photos/rectangle.png" alt="logo">
+                <img class="img-cover" id="img-h" src="assets/images/photos/rectangle.png" alt="logo">
             </div>
         </div>
-        <div class="flex-row-reverse m-up-down">
+        <div class="flex-row-reverse m-up-down" id="wh-flex">
             <div class="flex-column flex-center sz-50 pad-20">
                 <div class="text-snd text-left">
                     <h3 class="text-blue">Business Engagement</h3>
@@ -131,10 +152,10 @@
                 </div>
             </div>
             <div class="sz-50 flex-column flex-col-center flex-center pad-20">
-                <img class="img-cover" src="assets/images/photos/rectangle-copy.png" alt="logo">
+                <img class="img-cover" id="img-h" src="assets/images/photos/rectangle-copy.png" alt="logo">
             </div>
         </div>
-        <div class="flex-row m-up-down">
+        <div class="flex-row m-up-down" id="wh-flex">
             <div class="flex-column flex-center sz-50 pad-20">
                 <div class="text-snd text-left">
                     <h3 class="text-blue">Business Engagement</h3>
@@ -144,10 +165,10 @@
                 </div>
             </div>
             <div class="sz-50 flex-column flex-col-center flex-center pad-20">
-                <img class="img-cover" src="assets/images/photos/rectangle-copy-2.png" alt="logo">
+                <img class="img-cover" id="img-h" src="assets/images/photos/rectangle-copy-2.png" alt="logo">
             </div>
         </div>
-        <div class="flex-row-reverse m-up-down">
+        <div class="flex-row-reverse m-up-down" id="wh-flex">
             <div class="flex-column flex-center sz-50 pad-20">
                 <div class="text-snd text-left">
                     <h3 class="text-blue">Business Engagement</h3>
@@ -157,7 +178,7 @@
                 </div>
             </div>
             <div class="sz-50 flex-column flex-col-center flex-center pad-20">
-                <img class="img-cover" src="assets/images/photos/rectangle-copy-4.png" alt="logo">
+                <img class="img-cover" id="img-h" src="assets/images/photos/rectangle-copy-4.png" alt="logo">
             </div>
         </div>
     </section>
@@ -166,15 +187,15 @@
         <p class="text-charcoal text-snd">
             At iTexico, we help companies with Software Development, Digital product design - UX/UI, backend, Microsoft technologies, Java, JavaScript, Quality Assurance and testign services as well as Artificial Intelligence through Nearshore Development Teams customized to your growth imperatives.
         </p>
-        <div class="flex-row m-up-down">
+        <div class="flex-row m-up-down" id="img-tec">
             <img src="assets/images/photos/technologies/tech-1.png" alt="img">
             <img src="assets/images/photos/technologies/group-2.png" alt="img">
             <img src="assets/images/photos/technologies/group-3.png" alt="img">
-            <img src="assets/images/photos/technologies/group-4.png" alt="img">
-            <img src="assets/images/photos/technologies/tech-1.png" alt="img">
-            <img src="assets/images/photos/technologies/group-2.png" alt="img">
-            <img src="assets/images/photos/technologies/group-3.png" alt="img">
-            <img src="assets/images/photos/technologies/group-4.png" alt="img">
+            <img src="assets/images/photos/technologies/group-4.png" alt="img" class="img-d">
+            <img src="assets/images/photos/technologies/tech-1.png" alt="img" class="img-d">
+            <img src="assets/images/photos/technologies/group-2.png" alt="img" class="img-d">
+            <img src="assets/images/photos/technologies/group-3.png" alt="img" class="img-d">
+            <img src="assets/images/photos/technologies/group-4.png" alt="img" class="img-d">
         </div>
         <div>
             <button class="custom-btn">
@@ -190,7 +211,7 @@
             </p>
             <div class="flex-row flex-sp-bt">
                 <div class="flex-row">
-                    <img src="assets/images/people/kate.png"/>
+                    <img class="img-q" src="assets/images/people/kate.png"/>
                     <div class="flex-column m-lf">
                         <span>Kate Doe</span>
                         <span>CEO - Genesis Path</span>
@@ -216,7 +237,7 @@
     <section class="section-container-white">
         <h2 class="section-title">We built tech solutions for</h2>
         <div>
-            <div class="flex-row flex-center">
+            <div class="flex-row flex-center" id="cont-w">
                 <img src="assets/images/companies/carbon-sm.png" alt="img" class="img-margin">
                 <img src="assets/images/companies/chi-sm.png" alt="img" class="img-margin">
                 <img src="assets/images/companies/HomeAway.png" alt="img" class="img-margin">
@@ -229,14 +250,14 @@
                     We have provided Nearshore Software Development services to more than 200 start-up, growth, mid market and enterprise companies.
                 </p>
                 <div>
-                    <img src="assets/images/companies/clutch.png" alt="img" class="img-margin">
+                    <img src="assets/images/companies/clutch.png" alt="img" id="img-r">
                 </div>
             </div>
         </div>
     </section>
     <section class="section-container-light-blue flex-row flex-sp-bt flex-col-center">
-        <div>
-            <img src="assets/images/photos/tablet.png"/>
+        <div >
+            <img src="assets/images/photos/tablet.png" id="img-r">
         </div>
         <div class="flex-column flex-sp-bt flex-col-center">
             <h2 class="text-white-pop text-main">Guide to Lightning Decision Jams</h2>
@@ -252,7 +273,7 @@
     </section>
     <section class="section-container-gray">
         <h2 class="section-title">recent resouces</h2>
-        <div class="flex-row flex-wrap">
+        <div class="flex-row flex-center">
             <div class="card">
                 <div>
                     <img class="img-cover" src="assets/images/photos/pic-1.png" alt="img">
@@ -320,8 +341,8 @@
             </div>
         </div>
         <div class="section-container-charcoal">
-            <div class="flex-row">
-                <div>
+            <div class="flex-row" id="ft-n">
+                <div class="footer-center">
                     <div>
                         <a>
                             <img class="img-sm" src="assets/images/logo/iTexico_Logo_WH_Web.png" alt="logo">
@@ -418,7 +439,7 @@
                         <a>Opinions</a>
                     </li>
                 </ul>
-                <ul class="list-footer">
+                <ul class="list-footer" id="ft-con">
                     <li>contact</li>
                     <li>
                         <address>
@@ -441,5 +462,19 @@
             Privacy & Legal
         </div>
     </footer>
+        <script>
+        function displayMenu(){
+            var display;
+            var overlay = document.getElementById("overlay");
+            display = overlay.style.display;
+
+            if (display == "none"){
+                overlay.style.display = "block"
+            }
+            else{
+                overlay.style.display = "none"
+            }
+        }
+    </script>
 </body>
 </html>
